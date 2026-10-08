@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shashankbhasin21-spec.github.io/form124-kit/sitemap.xml

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Form124 Kit: HRA & Form 124 checklist for salaried India</title>
+<meta name="description" content="Free client-side checklist for Indian salaried employees preparing Form No. 124 (replaces Form 12BB) for HRA, LTA and home-loan claims. Not tax advice.">
+<link rel="canonical" href="https://shashankbhasin21-spec.github.io/form124-kit/">
+<meta property="og:title" content="Form124 Kit: free Form 124 / HRA checklist">
+<meta property="og:description" content="Free checklist and rent log for Indian salaried employees preparing Form No. 124 (earlier Form 12BB). Not tax advice.">
+<meta property="og:url" content="https://shashankbhasin21-spec.github.io/form124-kit/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="./">Form124 Kit</a>
+  <nav class="top" aria-label="Main">
+    <a href="#checklist">Checklist</a>
+    <a href="#rent">Rent log</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+  <h1>Get your Form 124 proofs ready before payroll asks.</h1>
+  <p class="tagline-hi" lang="hi">फॉर्म 124 और HRA के कागज़ साल भर तैयार रखें।</p>
+  <p class="lead">For Indian salaried employees claiming <strong>House Rent Allowance</strong>, LTA, home-loan interest or other deductions with their employer. Under the Income-tax Act, 2025, that statement is <strong>Form No. 124</strong> (earlier Form 12BB). This kit is a plain checklist and rent log — not a tax calculator and not tax advice.</p>
+  <p class="note"><strong>Privacy:</strong> nothing you type leaves this device. No accounts, analytics or cookies. Data stays in this browser unless you copy or print it yourself.</p>
+  <p class="note warn"><strong>Not tax or legal advice.</strong> Rules and forms change. Always confirm on the official Income Tax India pages linked below and with your employer or a qualified tax professional before you submit or pay anything.</p>
+</section>
+
+<section id="why" aria-labelledby="why-h">
+  <h2 id="why-h">Why this exists</h2>
+  <div class="card">
+    <ul class="plain">
+      <li>Income Tax India documents <strong>Form No. 124</strong> as the employee statement of claims for TDS (replacing Form 12BB under the Income-tax Rules, 2026).</li>
+      <li>HRA particulars typically need landlord name, address, PAN when aggregate rent exceeds <strong>₹1 lakh</strong>, relationship with the landlord if any, and annexures such as the rent agreement.</li>
+      <li>Most people scramble in January–March. A year-round checklist cuts missing receipts and last-minute WhatsApp chases.</li>
+    </ul>
+    <p class="small">Official source: <a href="https://www.incometaxindia.gov.in/documents/d/guest/fn-124" rel="noopener noreferrer" target="_blank">incometaxindia.gov.in — Form No. 124</a>. Secondary explainers linked in the footer.</p>
+  </div>
+</section>
+
+<section id="checklist" aria-labelledby="check-h">
+  <h2 id="check-h">1. Form 124 / HRA document checklist</h2>
+  <p class="lead-sm">Tick what you already have. Progress saves only on this device.</p>
+  <div class="card" id="check-list"></div>
+  <p class="small" id="check-status" aria-live="polite"></p>
+  <div class="actions">
+    <button type="button" id="btn-export" class="btn primary">Copy summary</button>
+    <button type="button" id="btn-print" class="btn">Print / save PDF</button>
+    <button type="button" id="btn-reset-check" class="btn ghost">Reset checklist</button>
+  </div>
+</section>
+
+<section id="rent" aria-labelledby="rent-h">
+  <h2 id="rent-h">2. Monthly rent log (optional)</h2>
+  <p class="lead-sm">Record rent paid each month. Totals help you see if landlord PAN is likely required (aggregate &gt; ₹1 lakh). Stored only in this browser.</p>
+  <div class="card form-grid">
+    <label>Tax year label <input id="tax-year" type="text" maxlength="20" placeholder="e.g. 2026-27" autocomplete="off"></label>
+    <label>Landlord name <input id="landlord" type="text" maxlength="80" autocomplete="off"></label>
+    <label>City (metro hint) <input id="city" type="text" maxlength="40" placeholder="Delhi / Mumbai / …" autocomplete="off"></label>
+  </div>
+  <div class="card" id="rent-months"></div>
+  <p class="small"><strong>Year total:</strong> <span id="rent-total">₹0</span> · <span id="pan-hint"></span></p>
+  <div class="actions">
+    <button type="button" id="btn-save-rent" class="btn primary">Save rent log</button>
+    <button type="button" id="btn-clear-rent" class="btn ghost">Clear rent log</button>
+  </div>
+</section>
+
+<section id="pricing" aria-labelledby="price-h">
+  <h2 id="price-h">Pricing</h2>
+  <div class="price-grid">
+    <div class="card price">
+      <h3>Free checklist</h3>
+      <p class="amount">₹0</p>
+      <ul class="plain">
+        <li>Form 124 / HRA checklist</li>
+        <li>Monthly rent log (local only)</li>
+        <li>Copy or print summary</li>
+      </ul>
+      <a class="btn" href="#checklist">Use free tool</a>
+    </div>
+    <div class="card price featured">
+      <h3>Pro pack</h3>
+      <p class="amount">₹199 <span class="or">/ $6.99</span></p>
+      <p class="small">One-time · founding price</p>
+      <ul class="plain">
+        <li>Printable rent-receipt log template</li>
+        <li>Landlord PAN &amp; relationship worksheet</li>
+        <li>Annexure checklist (agreement, LTA, loan)</li>
+        <li>Plain-language “what to ask HR” sheet</li>
+      </ul>
+      <a class="btn primary" id="btn-waitlist" href="mailto:shashankbhasin21@gmail.com?subject=Form124%20Kit%20Pro%20waitlist&body=I%20want%20the%20Form124%20Kit%20Pro%20pack%20(₹199%20%2F%20%246.99).%0A%0AName%3A%0ACity%3A%0A">Email to join waitlist</a>
+      <p class="small">Checkout link goes live on Gumroad when the payment listing is ready. No fake reviews; no invented traction.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sources" aria-labelledby="src-h">
+  <h2 id="src-h">Official &amp; secondary sources</h2>
+  <ul class="plain">
+    <li><a href="https://www.incometaxindia.gov.in/documents/d/guest/fn-124" rel="noopener noreferrer" target="_blank">Income Tax India — Form No. 124 (earlier Form 12BB)</a></li>
+    <li><a href="https://cleartax.in/s/form-124-income-tax" rel="noopener noreferrer" target="_blank">ClearTax — Form 124 guide (secondary)</a></li>
+  </ul>
+  <p class="small">Last checked by us: 8 Oct 2026. Confirm on the official site before you act.</p>
+</section>
+</main>
+
+<footer class="site"><div class="wrap">
+  <p>Form124 Kit by APEX HOLDING, New Delhi · <a href="mailto:shashankbhasin21@gmail.com">shashankbhasin21@gmail.com</a></p>
+  <p class="small"><a href="./terms.html">Terms</a> · <a href="./privacy.html">Privacy</a> · <a href="./refund.html">Refunds</a></p>
+</div></footer>
+<script src="app.js"></script>
+</body>
+</html>

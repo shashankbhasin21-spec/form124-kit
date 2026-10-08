@@ -1,0 +1,33 @@
+*{box-sizing:border-box}html{font-size:17px}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;line-height:1.5;color:#122;background:#f6f4ef}
+a{color:#0b5;text-decoration-thickness:1px}a:hover{color:#084}
+.wrap{max-width:720px;margin:0 auto;padding:0 1rem}
+header.site{border-bottom:1px solid #ddd;background:#fff;position:sticky;top:0;z-index:2}
+header.site .wrap,footer.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 1rem;flex-wrap:wrap}
+.brand{font-weight:700;color:#122;text-decoration:none}
+nav.top a{margin-left:.75rem;font-size:.92rem}
+main.wrap{padding:1.5rem 1rem 3rem}
+.hero h1{font-size:1.75rem;line-height:1.25;margin:.2rem 0 .8rem}
+.tagline-hi{color:#444;font-size:1.05rem}
+.lead,.lead-sm{color:#233}
+.note{background:#fff;border:1px solid #e2ddd3;border-radius:10px;padding:.75rem 1rem;margin:.75rem 0}
+.note.warn{border-color:#e6c27a;background:#fff8e8}
+.card{background:#fff;border:1px solid #e2ddd3;border-radius:12px;padding:1rem 1.1rem;margin:.75rem 0}
+.plain{padding-left:1.1rem;margin:.4rem 0}.plain li{margin:.35rem 0}
+.small{font-size:.88rem;color:#456}
+.actions{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.btn{display:inline-block;border:1px solid #bbb;background:#fff;color:#122;border-radius:999px;padding:.55rem 1rem;font:inherit;cursor:pointer;text-decoration:none}
+.btn.primary{background:#0b5;border-color:#0b5;color:#fff}.btn.ghost{background:transparent}
+.btn:focus{outline:2px solid #0b5;outline-offset:2px}
+.check-row{display:flex;gap:.65rem;align-items:flex-start;padding:.45rem 0;border-bottom:1px solid #f0ebe3}
+.check-row:last-child{border-bottom:0}
+.check-row input{margin-top:.35rem}
+.form-grid{display:grid;gap:.75rem}
+.form-grid label{display:grid;gap:.3rem;font-size:.92rem}
+input[type=text],input[type=number]{font:inherit;padding:.45rem .6rem;border:1px solid #ccc;border-radius:8px;width:100%}
+.month-row{display:grid;grid-template-columns:5rem 1fr;gap:.5rem;align-items:center;margin:.35rem 0}
+.price-grid{display:grid;gap:1rem}
+@media(min-width:640px){.price-grid{grid-template-columns:1fr 1fr}}
+.price .amount{font-size:1.6rem;font-weight:700;margin:.2rem 0}.price .or{font-size:1rem;font-weight:500;color:#456}
+.price.featured{border-color:#0b5;box-shadow:0 0 0 1px #0b5}
+footer.site{border-top:1px solid #ddd;background:#fff;margin-top:2rem}
+@media print{header.site nav,.actions,#pricing,#why,footer.site{display:none!important}body{background:#fff}}
